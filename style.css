@@ -1,0 +1,318 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2e003e; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: #3a0057; 
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar li {
+    margin: 0 15px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #d4a1ff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #fff;
+  }
+
+  .container {
+    margin-top: 80px; 
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    color: #d4a1ff;
+    margin-bottom: 20px;
+    animation: glow 2s infinite alternate;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d4a1ff;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d4a1ff;
+    color: #2e003e;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .social-icons a:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+  }
+
+  .skills-section {
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .skills-section h2 {
+    font-size: 2rem;
+    color: #d4a1ff;
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+    height: 120px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .skill img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .projects-section {
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .projects-section h2 {
+    font-size: 2rem;
+    color: #d4a1ff;
+    margin-bottom: 20px;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+    color: #d4a1ff;
+    margin-bottom: 10px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .contact-section {
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+padding: 40px 20px;
+border-radius: 10px;
+text-align: center;
+color: #fff;
+margin-top: 50px;
+}
+
+.contact-section h2 {
+font-size: 2rem;
+color: #d4a1ff;
+margin-bottom: 20px;
+}
+
+.contact-section p {
+font-size: 1.1rem;
+margin-bottom: 30px;
+color: #d4a1ff;
+}
+
+.contact-form-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contact-form {
+width: 100%;
+max-width: 500px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.form-group {
+position: relative;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 15px;
+font-size: 1rem;
+border: none;
+border-radius: 5px;
+background: rgba(255, 255, 255, 0.1);
+color: #fff;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+transition: background 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+color: #d4a1ff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+outline: none;
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.contact-form button {
+  margin-left: 30px;
+padding: 15px;
+font-size: 1.1rem;
+border: none;
+border-radius: 5px;
+background: #d4a1ff;
+color: #2e003e;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+background: #fff;
+color: #3a0057;
+transform: scale(1.05);
+}
+
+      /* Typing Animation */
+      .typing-container {
+        white-space: nowrap; /* Prevents text from wrapping */
+        overflow: hidden; /* Hides overflowing text */
+        border-right: 3px solid white; /* Simulates a blinking cursor */
+        font-size: 2rem;
+        animation: blink-caret 0.7s step-end infinite;
+    }
+
+    /* Typing Animation Keyframes */
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    /* Cursor Blinking Animation */
+    @keyframes blink-caret {
+        50% { border-color: transparent; }
+    }
+
+    /* Apply Typing Animation */
+    .typing-text {
+        display: inline-block;
+        width: 0;
+        overflow: hidden;
+        animation: typing 5s steps(40, end) forwards, blink-caret 0.6s step-end infinite;
+    }
+
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+

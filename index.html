@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" onclick="alert('Downloading Resume...')">Download Resume</a></li>
+        </ul>
+      </div>
+    
+      <div class="container" id="home">
+        <div class="profile">
+          <div class="typing-container">
+            <span class="typing-text">Hello! devs My Name is SHIKHA RAWAT!</span>
+        </div>
+          <img src="images/developer_scene_converted.jpg" alt="Shikha's Picture">
+        </div>
+        <p>
+          Hi, I'm Shikha Rawat, a passionate front-end developer specializing in creating beautiful,
+          user-friendly, and responsive websites. I love crafting interactive user interfaces and bringing
+          designs to life with HTML, CSS, and JavaScript.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/shikha-rawat-456a0b244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" onclick="alertSocialMedia('LinkedIn')" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/shikha007-Rawat
+          " onclick="alertSocialMedia('GitHub')" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/cheekuu__7/profilecard/?igsh=YmVrbmlxaGVoYzU1" onclick="alertSocialMedia('Instagram')" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    
+      <div class="skills-section" id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Logo">
+            <span>HTML</span>
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Logo">
+            <span>CSS</span>
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Logo">
+            <span>JavaScript</span>
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="React JS Logo">
+            <span>React JS</span>
+          </div>
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=" Logo">
+            <span>Taiwind CSS</span>
+          </div>
+          <div class="skill">
+            <img src=" https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="React JS Logo">
+            <span>Bootstrap</span>
+          </div>
+        </div>
+    </div>
+    <div class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A brief description of the project.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Project 2</h3>
+            <p>A brief description of the project.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Project 3</h3>
+            <p>A brief description of the project.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Project 4</h3>
+            <p>A brief description of the project.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+    </div>
+    <div class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to send me a message below!</p>
+        
+        <div class="contact-form-wrapper">
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="contact" name="contact" placeholder="Your Contact Number">
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+      
+      
+      
+</body>
+</html>
+
+    
